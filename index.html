@@ -8,14 +8,19 @@
 </head>
 <body>
     <div class="main_container">
-        <h1>Student Registration Form </h1>
+        <h1 id="main_heading">Student Registration Form </h1>
         <div class="secondary_container">
             <div class="left_container">
-              <form action="#" id="form">
-                <input type="text" id="student_name" placeholder="Name">
-                <input type="number" id="roll_no" placeholder="Roll No">
-                <input type="text" id="class" placeholder="Class">
-                <input type="number" id="enrollmentNo" placeholder="Enrollment No" >
+              <form action="#submit" id="form">
+                <label for="student_name">Student Name :-</label>
+                <input type="text" id="student_name" class="input_field" placeholder="Name">
+                <label for="roll_no">Roll No :-</label>
+                <input type="number" id="roll_no" class="input_field" placeholder="Roll No">
+                <label for="class">Class :-</label>
+                <input type="text" id="class" class="input_field" placeholder="Class">
+                <label for="enrollmentNo">Enrollment No :-</label>
+                <input type="number" id="enrollmentNo" class="input_field" placeholder="Enrollment No" >
+                <button id="submit">Submit</button>
               </form>
             </div>
             <div class="right_container">
