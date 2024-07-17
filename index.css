@@ -36,7 +36,8 @@
 .input_field{
     width: 400px;
     height: 30px;
-    border-radius: 10px;
+    border-radius: 5px;
+    padding: 5px;
 }
 #submit{
     height: 40px;
@@ -51,4 +52,5 @@
 .right_container{
     height: 100%;
     width: 50%;
+    background-color: black;
 }
