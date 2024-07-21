@@ -58,12 +58,19 @@ table{
     width: 100%;
   padding-top:10px ;
    margin-top: 60px;
-   border: 2px solid black;
+   
 }
-table tr td{
-    
-}
+
 table tr td{
     text-align: center;
     padding-top: 10px;
+}
+
+#resetBtn{
+    width: 60px;
+    height: 20px;
+}
+#deleteBtn{
+    width: 60px;
+    height: 20px;
 }
