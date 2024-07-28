@@ -10,22 +10,24 @@ let newData = document.querySelector("tbody");
 
 
 let editIndex = -1;
+
+// using a eventlistener on a form to submit a data 
 form.addEventListener("submit",
     displayData =(e)=>{
         e.preventDefault();
         
         
-        // form data 
+        // get the value of input fields by using the querySelector 
         const studentName = document.querySelector("#student_name").value;
         const studentId = document.querySelector("#student_id").value;
         const email = document.querySelector("#email").value;
         const contactNo = document.querySelector("#contact").value;
         
         
-        
+        // accesing the data form the localstorage to add data into the table 
         let localData = JSON.parse(localStorage.getItem("userDetails")) ?? [];
 
-
+// this if is used becouse if we want to edit the data first editIndex 
         if(editIndex=== -1){
             localData.push(
                 {
@@ -44,7 +46,7 @@ form.addEventListener("submit",
             editIndex = -1;
         }
     
-        
+        // adding the data inside the localstorage to store the data and to access data after closing the tab or refresh the page
         localStorage.setItem("userDetails",JSON.stringify(localData));
         storageData();
 
@@ -81,20 +83,22 @@ let storageData = ()=>{
 
     
 };
+// here when we click on the button and then we accese the data of perticular index and  all the values of that perticular index will assign to the input field 
+
 
 function editData(index){
     let localData = JSON.parse(localStorage.getItem("userDetails"));
 
-    let studentName = document.querySelector("#student_name").value;
-    let studentId = document.querySelector("#student_id").value;
-    let email = document.querySelector("#email").value;
-    let contactNo = document.querySelector("#contact").value;
+    // let studentName = document.querySelector("#student_name").value;
+    // let studentId = document.querySelector("#student_id").value;
+    // let email = document.querySelector("#email").value;
+    // let contactNo = document.querySelector("#contact").value;
 
     studentName=localData[index].name;
     studentId=localData[index].id;
     email=localData[index].email;
     contactNo=localData[index].contact;
-
+// value of index  will assign to editIndex form -1
     editIndex = index;
 };
 
@@ -111,7 +115,7 @@ function removeData(index){
 
 };
 
-
+// it is used to prevent the display data deleting after refresh the page
 document.addEventListener("DOMContentLoaded",storageData);
 
 
