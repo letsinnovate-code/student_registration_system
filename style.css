@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .main_container{
@@ -51,18 +52,34 @@
 }
 .right_container{
     height: 100%;
-    width: 50%;
+    width: 70%;
    
 }
 table{
     width: 100%;
   padding-top:10px ;
    margin-top: 60px;
+ 
    
 }
 
-table tr td{
+
+
+tbody tr{
     text-align: center;
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
+tbody tr span{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+tbody tr button{
+    font-size: 20px;
+    border: none;
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
