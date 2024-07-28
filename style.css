@@ -56,9 +56,12 @@
    
 }
 table{
-    width: 100%;
+    width: 90%;
+    
   padding-top:10px ;
    margin-top: 60px;
+   /* background-color: white; */
+   margin-left: 10px;
  
    
 }
@@ -68,6 +71,8 @@ table{
 tbody tr{
     text-align: center;
     margin-top: 10px;
+    
+    border-radius: 5px;
 }
 
 tbody tr span{
@@ -78,8 +83,8 @@ tbody tr span{
 tbody tr button{
     font-size: 20px;
     border: none;
-    background-color: aquamarine;
-    padding: 5px;
+    
+    padding: 5px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
