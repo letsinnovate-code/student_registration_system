@@ -74,7 +74,7 @@ let storageData = ()=>{
           <td>${element.email}</td>
           <td>${element.contact}</td>
           <td><button onclick='editData(${i})' >Edit</button></td>
-          <td><span onclick='removeData(${i})'>&times;<span></span></td>
+          <td><button onclick='removeData(${i})'>Delete</button></td>
         </tr>`;
         
     });
@@ -89,15 +89,12 @@ let storageData = ()=>{
 function editData(index){
     let localData = JSON.parse(localStorage.getItem("userDetails"));
 
-    // let studentName = document.querySelector("#student_name").value;
-    // let studentId = document.querySelector("#student_id").value;
-    // let email = document.querySelector("#email").value;
-    // let contactNo = document.querySelector("#contact").value;
+    
 
-    studentName=localData[index].name;
-    studentId=localData[index].id;
-    email=localData[index].email;
-    contactNo=localData[index].contact;
+    studentName.textContent =localData[index].name;
+    studentId.textContent=localData[index].id;
+    email.textContent=localData[index].email;
+    contactNo.textContent=localData[index].contact;
 // value of index  will assign to editIndex form -1
     editIndex = index;
 };

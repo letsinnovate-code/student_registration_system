@@ -6,7 +6,7 @@
 }
 
 .main_container{
-    height: auto;
+    height: 100vh;
     background-color: aqua;
    
 }
@@ -16,15 +16,17 @@
 }
 .secondary_container{
     display: flex;
-    height: 95vh;
+    margin-top: 40px;
+    height: 80vh;
 }
 .left_container{
     height: 100%;
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 #form{
     display: flex;
@@ -44,47 +46,71 @@
     height: 40px;
     width: 100px;
     border-radius: 10px;
+    border: none;
+    color: white;
+    background-color:rgb(17, 184, 17) ;
     align-self: center;
 }
 #submit:hover{
-    background-color: #546454;
-    box-shadow: 5px 5px 20px #546454;
+    
+    box-shadow: 3px 3px 10px rgb(17, 184, 17);
 }
+
 .right_container{
-    height: 100%;
     width: 70%;
-   
+    
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
 }
 table{
     width: 90%;
+    margin: 10px;
     
-  padding-top:10px ;
-   margin-top: 60px;
-   /* background-color: white; */
-   margin-left: 10px;
- 
-   
+    padding: 20px;
 }
-
-
-
-tbody tr{
+th {
+    background-color: #04AA6D;
+    color: white;
+    padding: 15px;
+}
+tbody{
+    
     text-align: center;
-    margin-top: 10px;
-    
-    border-radius: 5px;
+    background-color: aquamarine;
 }
-
+tbody tr{
+    margin: 10px;
+}
+tbody tr:hover {
+    background-color: coral;
+}
+tbody tr td{
+    padding: 10px;
+}
 tbody tr span{
     font-size: 30px;
     cursor: pointer;
+    padding: 2px;
+    background-color:rgb(17, 184, 17) ;
+
+}
+tbody tr span:hover{
+    box-shadow: 3px 3px 10px rgb(17, 184, 17);
+
 }
 
 tbody tr button{
     font-size: 20px;
     border: none;
+    background-color:rgb(17, 184, 17) ;
     
     padding: 5px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+tbody tr button:hover{
+    box-shadow: 3px 3px 10px rgb(17, 184, 17);
+    
 }
